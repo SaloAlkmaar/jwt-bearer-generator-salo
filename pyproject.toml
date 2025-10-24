@@ -1,0 +1,15 @@
+[project]
+name = "jwt-bearer-generator-salo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Ludo", email = "ludo@salo.nl" }]
+requires-python = ">=3.13"
+dependencies = ["pyjwt>=2.10.1"]
+
+[project.scripts]
+jwt-bearer-generator-salo = "jwt_bearer_generator_salo.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.8.11,<0.9.0"]
+build-backend = "uv_build"
